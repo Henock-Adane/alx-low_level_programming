@@ -9,7 +9,7 @@ int main(void)
 	int ch = 0;
 	int ln, rn;
 
-	while (c <= 99)
+	while (ch <= 99)
 	{
 		ln = (ch / 10 + '0');
 		rn = (ch % 10 + '0');
