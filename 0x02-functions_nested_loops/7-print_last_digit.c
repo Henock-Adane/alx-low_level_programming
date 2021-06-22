@@ -5,16 +5,17 @@
  * Return: 0
  */
 int print_last_digit(int c)
-{
-	if (c > 0 || c == 0)
-	{
-		_putchar (c % 10 + '0');
-		return (c % 10);
+{{
+		int d  = (c % 10);
+
+		if (d < 0)
+		{
+			d  = (d  * -1);
+			_putchar(d + '0');
+		}
+		else
+		{
+			_putchar(d + '0');
+		}
+		return (d);
 	}
-	else
-	{
-		c = c * -1;
-		_putchar (c % 10 + '0');
-		return (c % 10);
-	}
-}
