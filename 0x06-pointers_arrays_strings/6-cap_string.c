@@ -1,29 +1,29 @@
 #include "holberton.h"
 /**
  * cap_string - a function that capitalizes all words of a string.
- * @strn: Given string
+ * @s: Given string
  * Return: char
  */
-char *cap_string(char *strn)
+char *cap_string(char *s)
 {
 
 	int i = 0;
 	int c = 0;
 
-	for (i = 0; strn[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (strn[i] == '\t')
+		if (s[i] == '\t')
 		{
-			strn[i] = ' ';
+			s[i] = ' ';
 		}
-		if (strn[i] == ' ' || strn[i] == '.' || strn[i] == '\n')
+		if (s[i] == ' ' || s[i] == '.' || s[i] == '\n')
 		{
 			c = i + 1;
-			if (strn[c] >= 'a' && strn[c] <= 'z')
+			if (s[c] >= 'a' && s[c] <= 'z')
 			{
-				strn[c] = strn[c] - 32;
+				s[c] = s[c] - 32;
 			}
 		}
 	}
-	return (strn);
+	return (s);
 }
