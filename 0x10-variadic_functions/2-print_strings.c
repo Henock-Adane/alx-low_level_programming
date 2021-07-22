@@ -13,6 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 
 	va_list string;
+
 	va_start(string, n);
 
 	if (n > 0)
