@@ -1,4 +1,4 @@
-C - malloc, free
+*C - malloc, free*
 
 0, creates an array of chars, and initializes it with a specific char.
 1, returns a pointer to a newly allocated space in memory, which contains
