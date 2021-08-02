@@ -15,9 +15,13 @@ char *str_concat(char *s1, char *s2)
 {
 	int i, j, x;
 	char *concat;
+	int count;
+	int counter = 0;
 
+	for (count = 0; s1[count] || s2[count]; count++)
+		counter++;
 	x = 0;
-	concat = malloc(sizeof(*s1 + *s2));
+	concat = malloc(sizeof(char) * (counter + 1));
 
 	if (concat == NULL)
 		return (NULL);
