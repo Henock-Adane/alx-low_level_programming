@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * strtow - counts num of words in a string
+ * wrdcnt - counts num of words in a string
  * @s: string to split
  *
  * Return: num of words
